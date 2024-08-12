@@ -22,6 +22,7 @@ For training the Machine Learning Models we created lag features starting from t
 We got the best results from LSTM, FB Prophet, and Random Forest. Each of these models excels in different areas: LSTM captured temporal dependencies, Prophet identified long-term trends, and Random Forest unravelled hidden data relationships. In order to create a robust model which can perform with greater accuracy on the data, we combined their forecasts via averaging, achieving a significant RMSE reduction to . This success stems from:
 * Diversity: Each model's unique approach mitigates individual biases, creating a more robust picture.
 * Ensemble averaging: It smooths individual predictions, yielding a more reliable overall forecast.
+
 **Final RMSE: 807.628**
 ## Trading Strategy
 This strategy combines two popular indicators (EMA crossover and RSI/MACD) for a
