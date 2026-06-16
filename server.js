@@ -4,6 +4,7 @@ var path = require('path');
 var url = require('url');
 
 var publicDir = path.join(__dirname, 'public');
+var publicDirWithSeparator = publicDir + path.sep;
 var port = process.env.PORT || 3000;
 
 var mimeTypes = {
@@ -33,7 +34,7 @@ function resolveRequestPath(requestUrl) {
   var relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
   var resolvedPath = path.normalize(path.join(publicDir, relativePath));
 
-  if (resolvedPath.indexOf(publicDir) !== 0) {
+  if (resolvedPath !== publicDir && resolvedPath.indexOf(publicDirWithSeparator) !== 0) {
     return null;
   }
 
