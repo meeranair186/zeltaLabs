@@ -1,0 +1,22 @@
+{
+  "name": "radha-local-train-portfolio",
+  "version": "0.1.0",
+  "description": "A playful sketch-style portfolio journey through Mumbai local train memories.",
+  "main": "server.js",
+  "private": true,
+  "engines": {
+    "node": "11.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [
+    "portfolio",
+    "node",
+    "mumbai-local",
+    "sketch"
+  ],
+  "author": "Radha",
+  "license": "MIT"
+}
